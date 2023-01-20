@@ -1,7 +1,99 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>Survey</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<h1>Survey</h1>
+	<div class="center">
+		<p>Welcome to the survey! Please fill out the questions down below regarding your experience with this website.</p>
+		<p>Link to this page: </p>
+		<a href="https://ebonn088.github.io/">https://ebonn088.github.io/</a>
+		<br/><br/><a href="https://ebonn088.github.io/"><img src="image.png" width="350" height="200" border="5px"></a>
+	</div>
+
+	<div class="questions">
+		<div class="row">
+	    	<div>
+	      		<br/><label for="firstTime">Is this your first time on this website?</label>
+	    	</div>
+	    <div id = "firstTime">
+			<input type="radio" id="firstTimeYes" name="firstTime" value="Yes">
+			<label for="firstTimeYes"> Yes</label><br>
+			<input type="radio" id="firstTimeNo" name="firstTime" value="No">
+			<label for="firstTimeNo"> No</label><br>
+			<input type="radio" id="firstTimeNotSure" name="firstTime" value="NotSure">
+			<label for="firstTimeNotSure"> Not sure</label><br>
+	    </div>
+
+		<div class="row">
+		    <div>
+		    	<br/><label for="reason">What word would you use to describe this survey?</label>
+		    </div>
+		    <div>
+		    	<input type="text" id="reason" name="reason" placeholder="Write here...">
+		    </div>
+		</div>
+
+		<div class="row">
+		    <div>
+		    	<br/><label for="rating">How would you rate your experience?</label>
+		    </div>
+		    <div>
+		    	<select id="rating" name="rating">
+			        <option value="rating1">Exceptional</option>
+			        <option value="rating2">Good</option>
+			        <option value="rating3">Neutral</option>
+			        <option value="rating4">Not good</option>
+			        <option value="rating5">Awful</option>
+		      	</select>
+		    </div>
+		</div>
+
+		<div class="row">
+		    <div>
+		    	<br/><label for="exp">What is the most difficult part of using this website?</label>
+		    </div>
+		    <div>
+		    	<input type="text" id="exp" name="exp" placeholder="Write here...">
+		    </div>
+		</div>
+
+		<div class="row">
+		    <div>
+		    	<br/><label>What do you like about this page?</label>
+		    </div>
+		    <div>
+		    	<input type="checkbox" id="pageLike1" name="pageLike1" value="Readable">
+				<label for="vehicle1"> Text is easy to read</label><br>
+		    	<input type="checkbox" id="pageLike2" name="pageLike2" value="Simple">
+				<label for="vehicle1"> Simplicity</label><br>
+				<input type="checkbox" id="pageLike3" name="pageLike3" value="GoodStyle">
+				<label for="vehicle1"> Style and colors</label><br>
+		    </div>
+		</div>
+
+		<div class="row">
+		    <div>
+		    	<br/><label for="comments">Comments</label>
+		    </div>
+		    <div>
+		    	<textarea id="comments" name="comments" placeholder="Tell us about your experience..." style="height:200px;width:400px;"></textarea>
+		    </div>
+		</div>
+
+		  <br>
+		<div class="row">
+		    <input type="submit" value="Submit">
+		</div>
+
+		<div class="row signature">
+			<p>Website designed by Emily Bonneville</p>
+		</div>
+
+
+	</div>
+
 </body>
 </html>
